@@ -1,6 +1,5 @@
 # Diário de Decisões (DECISOES.md)
 
-Registro de escolhas de implementação e o porquê. Atualizar conforme o trabalho avança.
 
 ## Corpus
 
