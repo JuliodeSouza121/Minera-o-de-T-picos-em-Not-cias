@@ -1,0 +1,12 @@
+datasets
+pandas
+numpy
+scikit-learn
+sentence-transformers
+umap-learn
+hdbscan
+pydantic>=2.0
+google-genai
+python-dotenv
+tqdm
+streamlit

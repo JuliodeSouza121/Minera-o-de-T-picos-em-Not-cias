@@ -1,0 +1,25 @@
+{
+  "premissas": {
+    "tokens_entrada_por_chamada": 860.75,
+    "tokens_saida_por_chamada": 124.75,
+    "n_elementos": 1000,
+    "fonte_precos": "https://ai.google.dev/gemini-api/docs/pricing"
+  },
+  "custos_por_modelo": {
+    "gemini-2.5-flash": {
+      "custo_entrada_usd": 0.2582,
+      "custo_saida_usd": 0.3119,
+      "custo_total_usd": 0.5701
+    },
+    "gemini-3-flash-preview": {
+      "custo_entrada_usd": 0.4304,
+      "custo_saida_usd": 0.3742,
+      "custo_total_usd": 0.8046
+    },
+    "gemini-3.1-pro-preview": {
+      "custo_entrada_usd": 1.7215,
+      "custo_saida_usd": 1.497,
+      "custo_total_usd": 3.2185
+    }
+  }
+}

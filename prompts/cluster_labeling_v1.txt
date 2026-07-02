@@ -1,0 +1,41 @@
+Você é um analista editorial ajudando a organizar notícias em temas.
+
+Você receberá, para UM cluster de notícias:
+- Uma lista de palavras-chave mais distintivas do cluster (extraídas via c-TF-IDF).
+- De 3 a 5 trechos de exemplo (título + início do texto) de notícias representativas
+  desse cluster (as mais próximas do centróide).
+
+Sua tarefa é retornar um JSON com EXATAMENTE estes campos, sem nenhum texto antes
+ou depois do JSON:
+
+{{
+  "cluster_id": <int, fornecido na entrada>,
+  "nome_topico": "<nome curto, 3-6 palavras, em português>",
+  "palavras_chave": ["<3 a 8 palavras que melhor resumem o cluster>"],
+  "resumo": "<1 a 2 frases descrevendo o que une os documentos deste cluster>",
+  "nivel_confianca": <float entre 0.0 e 1.0>,
+  "possivel_ruido": <true ou false>
+}}
+
+Regras importantes:
+- O nome do tópico deve ser específico (ex: "Reforma tributária no Congresso",
+  não "Política" ou "Economia").
+- NUNCA use "Geral", "Outros", "Diversos" ou termos igualmente vagos como nome
+  do tópico.
+- Se os exemplos de notícias parecerem tratar de assuntos muito diferentes entre
+  si, defina possivel_ruido como true e justifique isso reduzindo o
+  nivel_confianca (abaixo de 0.5).
+- Baseie-se SOMENTE nas palavras-chave e nos exemplos fornecidos. Não invente
+  fatos, datas ou nomes que não apareçam no material fornecido.
+- A saída deve ser um JSON válido, sem comentários, sem markdown (` ``` `), sem
+  texto explicativo adicional.
+
+---
+ENTRADA:
+
+cluster_id: {cluster_id}
+
+palavras_chave_ctfidf: {palavras_chave}
+
+exemplos_representativos:
+{exemplos}

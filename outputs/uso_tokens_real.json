@@ -1,0 +1,7 @@
+{
+  "tokens_entrada": 3443,
+  "tokens_saida": 499,
+  "chamadas": 4,
+  "media_tokens_entrada_por_chamada": 860.75,
+  "media_tokens_saida_por_chamada": 124.75
+}

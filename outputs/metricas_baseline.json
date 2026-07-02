@@ -1,0 +1,18 @@
+{
+  "kmeans": {
+    "k_escolhido": 4,
+    "silhouette": 0.08735841512680054,
+    "pureza": 0.369,
+    "cobertura": 1.0,
+    "metrica_distancia": "cosine"
+  },
+  "hdbscan": {
+    "n_clusters_descobertos": 3,
+    "silhouette": 0.5638550519943237,
+    "pureza": 0.32220795892169446,
+    "cobertura": 0.779,
+    "metrica_distancia": "euclidean (apos UMAP)",
+    "umap_n_components": 15
+  },
+  "aviso": "Silhouettes nao sao diretamente comparaveis entre os dois algoritmos: espacos/metricas diferentes. Pureza eh comparavel pois usa a mesma referencia externa (category)."
+}
