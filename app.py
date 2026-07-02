@@ -1,8 +1,5 @@
 """
-Interface de demonstração (bônus, opcional) para a Aula 8.
-
-Lê os artefatos já gerados pelo pipeline (clustering.py e llm_labeling.py)
-e exibe de forma interativa -- não recalcula nada, só apresenta.
+Interface de demonstração
 
 Rodar com: streamlit run app.py
 (executar a partir da raiz do projeto, depois de já ter rodado todo o
